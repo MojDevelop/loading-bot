@@ -14,16 +14,16 @@ function App() {
     return (
         <NextUIProvider>
             <Router>
-                    <Menu />
-                    <Routes>
-                        <Route path="/" element={<LoadingComponent />} />
-                        <Route path="/tap" element={<Tap />} />
-                        <Route path="/boost" element={<Boost />} />
-                        <Route path="/stats" element={<Stats />} />
-                        <Route path="/tasks" element={<Tasks />} />
-                        <Route path="/referral" element={<Referral />} />
-                        <Route path="/airdrop" element={<AirDrop />} />
-                    </Routes>
+                <Menu />
+                <Routes>
+                    <Route path="/" element={<LoadingComponent />} />
+                    <Route path="/tap" element={<Tap />} />
+                    <Route path="/boost" element={<Boost />} />
+                    <Route path="/stats" element={<Stats />} />
+                    <Route path="/tasks" element={<Tasks />} />
+                    <Route path="/referral" element={<Referral />} />
+                    <Route path="/airdrop" element={<AirDrop />} />
+                </Routes>
             </Router>
         </NextUIProvider>
     );

@@ -6,9 +6,13 @@ body, html, #root {
     height: 100%;
     margin: 0;
     font-family: Arial, sans-serif;
+    overflow: hidden; /* Prevent scrolling */
 }
 
-/* Container Styles */
+.fixed-background {
+    background-size: cover; /* Ensure the background image covers the entire viewport */
+}
+
 .loading-container {
     height: 100vh;
     display: flex;
@@ -17,7 +21,7 @@ body, html, #root {
     justify-content: center;
     background-color: #282c34;
     color: white;
-    
+    overflow: hidden; /* Prevent scrolling */
 }
 
 nav ul {
@@ -62,7 +66,6 @@ nav ul li a {
     }
 }
 
-/* Small Devices */
 @media (max-width: 480px) {
     .loader {
         font-size: 8px;
@@ -102,5 +105,3 @@ nav ul li a {
         -1.8em -1.8em 0 0em rgba(255,255,255, 0.7);
     }
 }
-
-
